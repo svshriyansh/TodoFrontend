@@ -7,6 +7,7 @@ export function SearchBar({ addTask }) {
     if (e.key === "Enter") {
       if (data !== "") {
         await addTask(data);
+        setData("");
       }
     }
   };
